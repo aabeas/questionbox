@@ -21,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 # Redcarpet will build some native extensions, but the parser is standalone. Read more: https://github.com/vmg/redcarpet
 gem 'redcarpet'
 # Kaminari is a Scope & Engine based, clean, powerful, customizable and sophisticated paginator for modern web app frameworks
+gem 'rails_admin'
 gem 'kaminari'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails', '~> 4.3.1'
@@ -33,9 +34,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
+gem 'simple_form'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -45,6 +46,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'minitest-rails-capybara'
 end
 
 group :development do
@@ -56,5 +58,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+gem 'minitest-rails'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
